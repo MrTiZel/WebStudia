@@ -13,8 +13,8 @@
 
     #listArticles{
         @include flexBoxBetweenCenter;
-        margin-top: 80px;
-        
+        margin-bottom: 100px;
+
         article:first-child{
             h2{
                 font-weight: bold;

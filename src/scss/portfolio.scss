@@ -1,2 +1,29 @@
 @import "partials/params";
 @import "partials/mixins";
+
+
+#mainContent{
+
+    #portfolio{
+        @include flexBoxBetweenCenter;
+
+        .portfolioText{
+            width: 400px;
+            padding-right: 50px;
+            h2{
+                font-size: 40px;
+            }
+            h5{
+                font-size: 14px;
+                margin-top: 20px;
+            }
+            p{
+                font-size: 15px;
+                margin-top: 30px;
+            }
+            a{
+                margin-top: 30px;
+            }
+        }
+    }
+}
