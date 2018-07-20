@@ -6,8 +6,6 @@
 }
 @mixin flexBoxBetweenCenter{
   display: flex;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   justify-content: space-between;
   align-items: center;
 }
