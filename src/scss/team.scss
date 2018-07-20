@@ -1,2 +1,55 @@
 @import "partials/params";
 @import "partials/mixins";
+
+
+#mainContent{
+    #team{
+        h2{
+            font-size: 32px;
+            margin-bottom: 10px;
+            font-weight: lighter;
+        }
+        h5{
+            color: $colorTextForP;
+            font-size: 16px;
+            font-weight: lighter;
+            text-transform: none;
+        }
+        .teamTextH{
+            @include flexBoxBetweenCenter;
+            margin-top: 40px;
+            margin-bottom: 60px;
+
+            article:first-child{
+                h2{
+                    font-weight: lighter;
+                }
+            }
+            article{
+                @include flexBoxBetweenCenter;
+
+                .photo{
+                    margin-right: 10px;
+                }
+
+                h2{
+                    font-size: 22px;
+                    font-weight: bold;
+                }
+                h5{
+                    font-size: 14px;
+                    color: $colorForTextAndBG;
+                    font-weight: bold;
+                    text-transform: none;
+                    margin-bottom: 15px;
+                }
+                .manText{
+                    width: 160px;
+                }
+            }
+        }
+        a{
+            float: right;
+        }
+    }
+}
