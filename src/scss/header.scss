@@ -1,2 +1,95 @@
 @import "partials/params";
 @import "partials/mixins";
+
+#mainHeader{
+    background: url("../img/bgHeader.jpg") no-repeat;
+    background-size: cover;
+
+    background-position: top center;
+    height: 1008px;
+    #mainNav{
+        @include container;
+        @include flexBoxBetweenCenter;
+        height: 75px;
+
+        .logo{
+            display: flex;
+            align-items: flex-end;
+            background: $colorForTextAndBG;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            height: 75px;
+            padding-left: 10px;
+            padding-right: 10px;
+            h1{
+                font-size: 20px;
+                color: white;
+                text-transform: none;
+                font-weight: lighter;
+                margin-bottom: 10px;
+
+                span{
+                    color: $colorTextForH;
+                }
+        }
+        }
+        .navLink{
+
+            ul{
+                @include flexBoxBetweenCenter;
+                list-style: none;
+
+                li{
+                    margin-left: 40px;
+
+                    a{
+                        color: $colorTextForH;
+                        font-size: 14px;
+                        font-weight: lighter;
+                    }
+                }
+                .twitter, .facebook{
+                    margin-left: 20px;
+
+                    i{
+                        color: $colorForTextAndBG;
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+    #mainTextHeader{
+        @include container;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        height: 1008px;
+
+        .row{
+            display: flex;
+            flex-direction: column;
+            width: 500px;
+            line-height: 1.6;
+
+            h2{
+                font-size: 42px;
+            }
+
+            p{
+                color: $colorTextForH;
+                font-size: 20px;
+                margin-bottom: 20px;
+            }
+            a{
+                @include flexBoxCenterCenter;
+                width: 170px;
+                height: 65px;
+                background: $colorForTextAndBG;
+                color: white;
+                font-weight: lighter;
+                border-radius: 10px;
+            }
+        }
+    }
+}
