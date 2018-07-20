@@ -48,6 +48,9 @@
                         font-size: 14px;
                         font-weight: lighter;
                     }
+                    a:hover{
+                        color: $colorForTextAndBG;
+                    }
                 }
                 .twitter, .facebook{
                     margin-left: 20px;
@@ -55,6 +58,9 @@
                     i{
                         color: $colorForTextAndBG;
                         font-size: 18px;
+                    }
+                    i:hover{
+                        color: $colorTextForH;
                     }
                 }
             }
@@ -90,6 +96,9 @@
                 color: white;
                 font-weight: lighter;
                 border-radius: 10px;
+            }
+            a:hover{
+                background: $colorTextForH;
             }
         }
     }

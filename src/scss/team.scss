@@ -4,6 +4,7 @@
 
 #mainContent{
     #team{
+        @include container;
         padding-bottom: 50px;
         h2{
             font-size: 32px;

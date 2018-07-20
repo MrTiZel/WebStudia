@@ -3,7 +3,7 @@
 
 
 #mainContent{
-    @include container;
+
     a{
         display: flex;
         i{
@@ -12,6 +12,7 @@
     }
 
     #listArticles{
+        @include container;
         @include flexBoxBetweenCenter;
         margin-bottom: 100px;
 
@@ -29,6 +30,9 @@
             h2{
                 font-size: 26px;
                 font-weight: lighter;
+            }
+            a{
+                width: 80px;
             }
             P{
                 font-size: 15px;

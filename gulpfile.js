@@ -16,7 +16,7 @@ var config = {
         cssName: 'main.min.css',
         path: './public/css'
     },
-    isDevelop: true
+    isDevelop: false
 };
 
 gulp.task('scss', function () {
