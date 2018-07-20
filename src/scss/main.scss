@@ -1,0 +1,29 @@
+@import "partials/params";
+@import "partials/mixins";
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+*{
+  margin: 0;
+  padding: 0;
+}
+
+html, body{
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.2;
+}
+h1,h2,h3,h4,h5,h6{
+  color: $colorTextForH;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+p{
+  color: $colorTextForP;
+}
+span{
+    color: $colorForTextAndBG;
+}
+a{
+    color: $colorForTextAndBG;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
